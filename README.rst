@@ -12,3 +12,13 @@
    令行git clone https://github.com/overfly83/automation_demo.git AUTOMATION
    
 6. 在目录AUTOMATION下可以通过RIDE打开robot脚本创建关键字和测试用例。
+
+
+
+RIDE的安装
+
+1. 安装wxpython， 对于版本 python2.7.13需要安装链接http://sourceforge.net/projects/wxpython/files/wxPython/2.8.12.1/
+
+2. 在命令行窗口运行pip install robotframework-ride
+
+3. 在命令行窗口运行ride.py打开RIDE，在RIDE中打开目录AUTOMATION，开始项目实施。
