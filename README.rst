@@ -1,4 +1,4 @@
-安装使用指南
+BJRobot框架安装使用指南
 ------------
 1. 安装 python 2.7+，不支持python3.0+，链接https://www.python.org/
 
