@@ -16,6 +16,7 @@
 
 
 RIDE的安装
+------------
 
 1. 安装wxpython， 对于版本 python2.7.13需要安装链接http://sourceforge.net/projects/wxpython/files/wxPython/2.8.12.1/
 
