@@ -23,3 +23,14 @@ RIDE的安装
 2. 在命令行窗口运行pip install robotframework-ride
 
 3. 在命令行窗口运行ride.py打开RIDE，在RIDE中打开目录AUTOMATION，开始项目实施。
+
+
+
+业务层用户关键字创建指南（RIDE内操作）
+------------
+1. 在AUTOMATION目录下的KEYWORD目录上右键选择New Resource
+2. 在New Resource File对话框中给关键字资源文件一个名字，通常给予功能模块名字。名字=<模块名字>, Format=ROBOT，点击OK
+3. 在新建立的资源文件上右键选择New User Keyword，设置关键字名字和参数。自定义关键字下的参数设置可以由外部测试用例在调用该关键字时传入值，并被该自定义关键字下的子关键字读取。
+4. 在自定义关键字下，可以调用底层框架robotframework-bjrobot框架的关键字来创建业务关键字。
+5. 在Script下的测试套件（TestSuite1或者Test）点击右方Resource，加入以上创建完的关键字资源文件，后缀为Robot或者Txt（两种后缀文件名都可以。）
+6. 在测试用例下，就可以调用自定义的业务关键字了。（按F5可以查阅所有关键字和其说明文档）
