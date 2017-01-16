@@ -17,12 +17,14 @@ BJRobot框架安装使用指南
 
 3. 运行命令行窗口，CD到C:\\Python27\\Scripts， 在该目录下执行命令 easy_install pip
 
-4. 在命令行窗口运行pip install robotframework-bjrobot
+4. 升级pip 8.1.1至9.0.1 执行命令： python -m pip install --upgrade pip
 
-5. 在想要创建自动化测试项目的盘符下执行命
+5. 在命令行窗口运行pip install robotframework-bjrobot
+
+6. 在想要创建自动化测试项目的盘符下执行命
    令行git clone https://github.com/overfly83/automation_demo.git AUTOMATION
    
-6. 在目录AUTOMATION下可以通过RIDE打开robot脚本创建关键字和测试用例。
+7. 在目录AUTOMATION下可以通过RIDE打开robot脚本创建关键字和测试用例。
 
 
 
