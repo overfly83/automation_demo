@@ -1,6 +1,6 @@
 *** Settings ***
 Test Teardown     close all browsers
-Library           BJRobot    screenshot_root_directory=screenshot    #
+Library           BJRobot    screenshot_root_directory=screenshot
 Resource          ../../KEYWORD/百度搜索.robot
 Resource          ../../KEYWORD/必应搜索.robot
 
