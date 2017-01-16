@@ -1,6 +1,6 @@
 *** Settings ***
 Test Teardown     close all browsers
-Library           BJRobot    screenshot_root_directory=../screenshot
+Library           BJRobot    screenshot_root_directory=screenshot
 
 *** Test Cases ***
 Search Testing2
