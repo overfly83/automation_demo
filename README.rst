@@ -21,6 +21,7 @@ BJRobot框架安装使用指南
 4. 升级pip 8.1.1至9.0.1 执行命令： python -m pip install --upgrade pip
 
 5. 在命令行窗口运行如下两个框架
+
    pip install robotframework-bjrobot
    
    pip install robotframework-appiumlibrary
