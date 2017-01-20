@@ -22,6 +22,7 @@ BJRobot框架安装使用指南
 
 5. 在命令行窗口运行如下两个框架
    pip install robotframework-bjrobot
+   
    pip install robotframework-appiumlibrary
 
 6. CD至合适目录（安装自动化测试项目）下执行命令行
