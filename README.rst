@@ -7,7 +7,8 @@ BJRobot框架简介
 5. 错误诊断，提供错误信息日志和测试报告的集成，并且嵌入失败测试步骤的清晰截图，让错误诊断工作轻松进行。
 6. 中文支持，全套测试框架支持中文。让中文测试工作人员可以掌握并使用自动化测试框架。
 7. 持续集成，框架提供持续集成接口，可以与调度工具无缝集成，在无人员监控的情况下自动执行每日测试案例并提交测试报告。
-8. 针对移动端测试，本框架集成了Appium框架，兼容安卓，苹果的原生以及混合型（webview）应用测试环境，具体用法请参阅 `AppiumRobot的关键字文档 <http://serhatbolsu.github.io/robotframework-appiumlibrary/AppiumLibrary.html>`_ ,针对移动测试，由于测试环境比较复杂，请分别参考 `IOS <http://appium.io/slate/en/tutorial/ios.html>`_ 和 `Android <http://appium.io/slate/en/tutorial/android.html>`_ 应用测试环境的搭建指南。
+8. 支持移动平台应用，本框架集成了Appium框架，兼容安卓，苹果的原生以及混合型（webview）应用测试环境。
+9. 具体用法请参阅 `BJRobot的关键字文档 <https://overfly83.github.io/BJRobot.html>`_ ,针对移动测试，由于测试环境比较复杂，请分别参考 `IOS <http://appium.io/slate/en/tutorial/ios.html>`_ 和 `Android <http://appium.io/slate/en/tutorial/android.html>`_ 应用测试环境的搭建指南。
    
 
 BJRobot框架安装使用指南
