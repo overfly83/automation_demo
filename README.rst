@@ -46,25 +46,25 @@ BJRobot框架安装使用指南
 
 12. 下载完Android SDK之后安装模拟器，4.2.2+，打开AVD Manager，创建--> 
 
-AVD Name = test
+    AVD Name = test
 
-Device= Nexus 4(4.7", 768 * 1280: xhdpi)
+    Device= Nexus 4(4.7", 768 * 1280: xhdpi)
 
-Target=Android 4.4.2 - API Level 19
+    Target=Android 4.4.2 - API Level 19
 
-CPU/ABI=Intel Atom (x86)
+    CPU/ABI=Intel Atom (x86)
 
-Keyboard=勾选（hardware keyboard present）
+    Keyboard=勾选（hardware keyboard present）
 
-Skin=Skin with dynamic hardware controls
+    Skin=Skin with dynamic hardware controls
 
-Front Camera=None
+    Front Camera=None
 
-Back Camera=None
+    Back Camera=None
 
-Memory Options: RAM=2048 VM Heap=768
+    Memory Options: RAM=2048 VM Heap=768
 
-保存设置，在执行用例之前需要启动模拟器
+    保存设置，在执行用例之前需要启动模拟器
 
 13. 在执行测试用例之前需要启动appium服务，可以直接启动appium.exe或者 使用命令行启动
 Android终端
@@ -74,6 +74,8 @@ appium --avd test -a 127.0.0.1 -p 4723 --language "zh_CN" --locale "CN"
 iOS终端
 
 appium  -a 127.0.0.1 -p 4725 --platform-name "iOS" --native-instruments-lib --no-reset
+
+14. 选中测试用例Function2/test.robot可以执行。
 
 以上为Windows下使用安卓模拟器测试用例的环境配置步骤，如果需要在Mac操作系统下配置请直接参考 `此处 <http://appium.io/tutorial.html?lang=zh>`_
 
