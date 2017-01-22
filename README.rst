@@ -7,7 +7,7 @@ BJRobot框架简介
 5. 错误诊断，提供错误信息日志和测试报告的集成，并且嵌入失败测试步骤的清晰截图，让错误诊断工作轻松进行。
 6. 中文支持，全套测试框架支持中文。让中文测试工作人员可以掌握并使用自动化测试框架。
 7. 持续集成，框架提供持续集成接口，可以与调度工具无缝集成，在无人员监控的情况下自动执行每日测试案例并提交测试报告。
-8. 针对移动端测试，本框架借用了AppiumLibrary作为解决方案，可以兼容安卓，苹果的原生以及混合型（webview）应用测试环境，具体用法请参阅 `AppiumRobot的关键字文档 <http://serhatbolsu.github.io/robotframework-appiumlibrary/AppiumLibrary.html>`_ ,针对移动测试，由于测试环境比较复杂，请分别参考 `IOS <http://appium.io/slate/en/tutorial/ios.html>`_ 和 `Android <http://appium.io/slate/en/tutorial/android.html>`_ 应用测试环境的搭建指南。
+8. 针对移动端测试，本框架集成了Appium框架，兼容安卓，苹果的原生以及混合型（webview）应用测试环境，具体用法请参阅 `AppiumRobot的关键字文档 <http://serhatbolsu.github.io/robotframework-appiumlibrary/AppiumLibrary.html>`_ ,针对移动测试，由于测试环境比较复杂，请分别参考 `IOS <http://appium.io/slate/en/tutorial/ios.html>`_ 和 `Android <http://appium.io/slate/en/tutorial/android.html>`_ 应用测试环境的搭建指南。
    
 
 BJRobot框架安装使用指南
@@ -24,7 +24,9 @@ BJRobot框架安装使用指南
 
    pip install robotframework-bjrobot
    
-
+   更新框架指令为 pip install -U robotframework-bjrobot
+   
+   
 6. CD至目标目录（安装自动化测试项目）下执行命令行
    git clone https://github.com/overfly83/automation_demo.git AUTOMATION
    在当前目录下为生成名为AUTOMATION的自动化测试项目。
@@ -32,6 +34,48 @@ BJRobot框架安装使用指南
 7. 在目录AUTOMATION下可以通过RIDE打开robot脚本创建关键字和测试用例。
 
 
+如要搭建移动端测试环境还需要执行以下步骤
+
+8. 安装appium server. 可以通过nodejs或者直接下载 `安装包<https://bitbucket.org/appium/appium.app/downloads/>`_
+
+9. 安装最新的 JDK1.8 `here <http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html>`_ , 配置JAVA_HOME环境变量，bin目录配置到PATH环境变量。
+
+10. 安装 `Android SDK <http://developer.android.com/sdk/index.html>`_ 配置ANDROID_HOME环境变量，tools和platform-tools目录配置到PATH环境变量。
+
+11. 安装 `Apache Ant <http://ant.apache.org/bindownload.cgi>`_ 配置ANT_HOME环境变量，bin目录配置到PATH环境变量。
+
+12. 下载完Android SDK之后安装模拟器，4.2.2+，打开AVD Manager，创建--> 
+
+AVD Name = test
+
+Device= Nexus 4(4.7", 768 * 1280: xhdpi)
+
+Target=Android 4.4.2 - API Level 19
+
+CPU/ABI=Intel Atom (x86)
+
+Keyboard=勾选（hardware keyboard present）
+
+Skin=Skin with dynamic hardware controls
+
+Front Camera=None
+
+Back Camera=None
+
+Memory Options: RAM=2048 VM Heap=768
+
+保存设置，在执行用例之前需要启动模拟器
+
+13. 在执行测试用例之前需要启动appium服务，可以直接启动appium.exe或者 使用命令行启动
+Android终端
+
+appium --avd test -a 127.0.0.1 -p 4723 --language "zh_CN" --locale "CN"
+
+iOS终端
+
+appium  -a 127.0.0.1 -p 4725 --platform-name "iOS" --native-instruments-lib --no-reset
+
+以上为Windows下使用安卓模拟器测试用例的环境配置步骤，如果需要在Mac操作系统下配置请直接参考 `此处 <http://appium.io/tutorial.html?lang=zh>`_
 
 RIDE的安装
 ------------------------------------------------------------------------------------------------------------------------
