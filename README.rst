@@ -1,6 +1,6 @@
 BJRobot框架简介
 -------------------------------------------------------------------------------------------------------------------------
-1. 跨平台，易移植，可安装在包括Windows, Linux, Mac OSX的所有操作系统上
+1. 跨平台，灵活配置，到处执行。可安装在包括Windows, Linux, Mac OSX的所有操作系统上。
 2. 跨浏览器，支持IE, Chrome，Firefox，Edge等正式版本的浏览器，在一个实时测试用例执行的会话中支持不同浏览器同时执行。
 3. 平行执行，支持同时执行多浏览器执行不同测试案例，并且使用不同类型的浏览器。
 4. 集成报表汇总，测试集群完成后可生成高级汇总报表，并且高亮测试通过率。
@@ -24,9 +24,8 @@ BJRobot框架安装使用指南
 
    pip install robotframework-bjrobot
    
-   如果需要移动应用测试，则需安装pip install robotframework-appiumlibrary
 
-6. CD至合适目录（安装自动化测试项目）下执行命令行
+6. CD至目标目录（安装自动化测试项目）下执行命令行
    git clone https://github.com/overfly83/automation_demo.git AUTOMATION
    在当前目录下为生成名为AUTOMATION的自动化测试项目。
    
