@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170122 17:53:00.113" generator="Robot 3.0.1 (Python 2.7.12 on win32)">
+<suite source="E:\AUTOMATION\script\Function2\test.robot" id="s1" name="Test">
+<test id="s1-t1" name="test_demo">
+<kw name="Open Application" library="BJRobot">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>http://127.0.0.1:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=4.2.2</arg>
+<arg>deviceName=tesddt</arg>
+<arg>app=E:\\AUTOMATION\\script\\Function2/../../demoapp/OrangeDemoApp.apk</arg>
+<arg>automationName=appium</arg>
+<arg>appPackage=com.netease.qa.orangedemo</arg>
+<arg>appActivity=MainActivity</arg>
+</arguments>
+<status status="PASS" endtime="20170122 17:53:20.749" starttime="20170122 17:53:00.268"></status>
+</kw>
+<kw name="Close Application" library="BJRobot">
+<doc>Closes the current application.</doc>
+<status status="PASS" endtime="20170122 17:53:23.315" starttime="20170122 17:53:20.749"></status>
+</kw>
+<kw type="teardown" name="Close All Browsers" library="BJRobot">
+<doc>Closes the all open browsers in current session.</doc>
+<status status="PASS" endtime="20170122 17:53:23.316" starttime="20170122 17:53:23.316"></status>
+</kw>
+<tags>
+<tag>regression</tag>
+</tags>
+<status status="PASS" endtime="20170122 17:53:23.316" critical="yes" starttime="20170122 17:53:00.267"></status>
+</test>
+<status status="PASS" endtime="20170122 17:53:23.317" starttime="20170122 17:53:00.115"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">regression</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Test" pass="1">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
