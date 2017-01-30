@@ -21,7 +21,7 @@
 
 根据搜索链接验证搜索结果
     [Arguments]    ${partiallinktext}
-    find element by partial link text    ${partiallinktext}
+    find element    partial link=${partiallinktext}
 
 关闭浏览器
     close browser

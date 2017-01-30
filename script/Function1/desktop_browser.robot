@@ -5,7 +5,7 @@ Resource          ../../KEYWORD/百度搜索.robot
 Resource          ../../KEYWORD/必应搜索.robot
 
 *** Test Cases ***
-Search Testing
+成功样例
     open browser    http://www.baidu.com    chrome    \    aa
     maximize browser window
     title should contain    百度一下
@@ -16,15 +16,15 @@ Search Testing
     maximize browser window
     switch browser    aa
     set window size    1024    768
-    find element by partial link text    JavaScript
+    find element    partial link=JavaScript
     close browser
     switch browser    bb
     set value by id    sb_form_q    msa cdc test
     click element by id    sb_form_go
-    find element by xpath    //li[@class='b_algo' and @data-bm='7']
+    find element    xpath=//li[@class='b_algo' and @data-bm='7']
     close browser
 
-Search Testing failed
+失败样例
     open browser    http://www.baidu.com    chrome    alias=aa
     maximize browser window
     title should contain    百度一下
@@ -34,14 +34,14 @@ Search Testing failed
     maximize browser window
     title should contain    全球搜索
     switch browser    aa
-    find element by partial link text    JavaScript
+    find element   partial link text=JavaScript
     switch browser    bb
     set value by id    sb_form_q    msa cdc test
     click element by id    sb_form_go
-    find element by xpath    //li[@class='b_algo' and @data-bm='61']
+    find element    xpath=//li[@class='b_algo' and @data-bm='61']
     close browser
 
-user keyword usage
+用户自定义关键字测试样例
     打开百度搜索    ie    aa
     最大化浏览器
     检查浏览器抬头    百度一下

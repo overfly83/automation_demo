@@ -5,7 +5,7 @@
 
 根据XPATH判断搜索结果
     [Arguments]    ${xpath}
-    find element by xpath    ${xpath}
+    find element    xpath=${xpath}
 
 必应搜索
     [Arguments]    ${value}

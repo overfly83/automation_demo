@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170122 20:26:20.380" generator="Robot 3.0.1 (Python 2.7.12 on win32)">
+<robot generated="20170130 23:58:08.995" generator="Robot 3.0.1 (Python 2.7.12 on win32)">
 <suite source="E:\AUTOMATION\script\Function2\test.robot" id="s1" name="Test">
-<test id="s1-t1" name="test_demo">
+<test id="s1-t1" name="Android_Native_Demo">
 <kw name="Open Application" library="BJRobot">
 <doc>Opens a new application to given Appium server.</doc>
 <arguments>
@@ -13,65 +13,60 @@
 <arg>automationName=appium</arg>
 <arg>appPackage=com.example.android.contactmanager</arg>
 </arguments>
-<status status="PASS" endtime="20170122 20:26:27.114" starttime="20170122 20:26:20.520"></status>
+<status status="PASS" endtime="20170130 23:58:16.243" starttime="20170130 23:58:09.122"></status>
 </kw>
-<kw name="Click Element M" library="BJRobot">
-<doc>Click element identified by `locator`.</doc>
+<kw name="Click Element" library="BJRobot">
+<doc>Click the element by its element locator</doc>
 <arguments>
 <arg>id=com.example.android.contactmanager:id/addContactButton</arg>
 </arguments>
-<msg timestamp="20170122 20:26:27.114" level="INFO">Clicking element 'id=com.example.android.contactmanager:id/addContactButton'.</msg>
-<status status="PASS" endtime="20170122 20:26:31.111" starttime="20170122 20:26:27.114"></status>
+<status status="PASS" endtime="20170130 23:58:21.097" starttime="20170130 23:58:16.243"></status>
 </kw>
-<kw name="Input Text M" library="BJRobot">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
+<kw name="Set Value" library="BJRobot">
+<doc>set value on a certain element by its locator</doc>
 <arguments>
 <arg>id=com.example.android.contactmanager:id/contactNameEditText</arg>
 <arg>appium user</arg>
 </arguments>
-<msg timestamp="20170122 20:26:31.112" level="INFO">Typing text 'appium user' into text field 'id=com.example.android.contactmanager:id/contactNameEditText'</msg>
-<status status="PASS" endtime="20170122 20:26:38.051" starttime="20170122 20:26:31.111"></status>
+<status status="PASS" endtime="20170130 23:58:30.548" starttime="20170130 23:58:21.097"></status>
 </kw>
-<kw name="Input Text M" library="BJRobot">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
+<kw name="Set Value" library="BJRobot">
+<doc>set value on a certain element by its locator</doc>
 <arguments>
 <arg>id=com.example.android.contactmanager:id/contactPhoneEditText</arg>
 <arg>55555555555555</arg>
 </arguments>
-<msg timestamp="20170122 20:26:38.052" level="INFO">Typing text '55555555555555' into text field 'id=com.example.android.contactmanager:id/contactPhoneEditText'</msg>
-<status status="PASS" endtime="20170122 20:26:43.538" starttime="20170122 20:26:38.052"></status>
+<status status="PASS" endtime="20170130 23:58:38.548" starttime="20170130 23:58:30.548"></status>
 </kw>
-<kw name="Input Text M" library="BJRobot">
-<doc>Types the given `text` into text field identified by `locator`.</doc>
+<kw name="Set Value" library="BJRobot">
+<doc>set value on a certain element by its locator</doc>
 <arguments>
 <arg>id=com.example.android.contactmanager:id/contactEmailEditText</arg>
 <arg>demo@io.com</arg>
 </arguments>
-<msg timestamp="20170122 20:26:43.539" level="INFO">Typing text 'demo@io.com' into text field 'id=com.example.android.contactmanager:id/contactEmailEditText'</msg>
-<status status="PASS" endtime="20170122 20:26:49.162" starttime="20170122 20:26:43.538"></status>
+<status status="PASS" endtime="20170130 23:58:46.283" starttime="20170130 23:58:38.548"></status>
 </kw>
-<kw name="Click Element M" library="BJRobot">
-<doc>Click element identified by `locator`.</doc>
+<kw name="Click Element" library="BJRobot">
+<doc>Click the element by its element locator</doc>
 <arguments>
 <arg>accessibility_id=Save</arg>
 </arguments>
-<msg timestamp="20170122 20:26:49.163" level="INFO">Clicking element 'accessibility_id=Save'.</msg>
-<status status="PASS" endtime="20170122 20:26:52.999" starttime="20170122 20:26:49.163"></status>
+<status status="PASS" endtime="20170130 23:58:50.140" starttime="20170130 23:58:46.283"></status>
 </kw>
 <kw name="Close Application" library="BJRobot">
 <doc>Closes the current application.</doc>
-<status status="PASS" endtime="20170122 20:26:53.425" starttime="20170122 20:26:53.000"></status>
+<status status="PASS" endtime="20170130 23:58:50.572" starttime="20170130 23:58:50.141"></status>
 </kw>
 <kw type="teardown" name="Close All Applications" library="BJRobot">
 <doc>Closes all open applications.</doc>
-<status status="PASS" endtime="20170122 20:26:53.427" starttime="20170122 20:26:53.426"></status>
+<status status="PASS" endtime="20170130 23:58:50.572" starttime="20170130 23:58:50.572"></status>
 </kw>
 <tags>
 <tag>regression</tag>
 </tags>
-<status status="PASS" endtime="20170122 20:26:53.427" critical="yes" starttime="20170122 20:26:20.519"></status>
+<status status="PASS" endtime="20170130 23:58:50.572" critical="yes" starttime="20170130 23:58:09.121"></status>
 </test>
-<status status="PASS" endtime="20170122 20:26:53.427" starttime="20170122 20:26:20.383"></status>
+<status status="PASS" endtime="20170130 23:58:50.573" starttime="20170130 23:58:08.998"></status>
 </suite>
 <statistics>
 <total>
