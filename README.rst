@@ -68,6 +68,7 @@ BJRobot框架安装使用指南
     保存设置，在执行用例之前需要启动模拟器
 
 13. 在执行测试用例之前需要启动appium服务，可以直接启动appium.exe或者 使用命令行启动
+
 Android终端
 
 appium --avd test -a 127.0.0.1 -p 4723 --language "zh_CN" --locale "CN"
