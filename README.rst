@@ -99,3 +99,10 @@ RIDE的安装
 4. 在自定义关键字下，可以调用底层框架robotframework-bjrobot框架的关键字来创建业务关键字。
 5. 在Script下的测试套件（TestSuite1或者Test）点击右方Resource，加入以上创建完的关键字资源文件，后缀为Robot或者Txt（两种后缀文件名都可以。）
 6. 在测试用例下，就可以调用自定义的业务关键字了。（按F5可以查阅所有关键字和其说明文档）
+
+命令行接口
+------------------------------------------------------------------------------------------------------------------------
+Windows下
+pybot.bat --outputdir e:/AUTOMATION/output script/Function1/desktop_browser.robot script/Function2/mobile.robot
+Linux下
+robot --outputdir e:/AUTOMATION/output script/Function1/desktop_browser.robot script/Function2/mobile.robot
