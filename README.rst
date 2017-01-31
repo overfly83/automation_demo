@@ -69,17 +69,17 @@ BJRobot框架安装使用指南
 
 13. 在执行测试用例之前需要启动appium服务，可以直接启动appium.exe或者 使用命令行启动
 
-Android终端
+    Android终端
 
-appium --avd test -a 127.0.0.1 -p 4723 --language "zh_CN" --locale "CN"
+    appium --avd test -a 127.0.0.1 -p 4723 --language "zh_CN" --locale "CN"
 
-iOS终端
+    iOS终端
 
-appium  -a 127.0.0.1 -p 4725 --platform-name "iOS" --native-instruments-lib --no-reset
+    appium  -a 127.0.0.1 -p 4725 --platform-name "iOS" --native-instruments-lib --no-reset
 
 14. 选中测试用例Function2/test.robot可以执行。
 
-以上为Windows下使用安卓模拟器测试用例的环境配置步骤，如果需要在Mac操作系统下配置请直接参考 `此处 <http://appium.io/tutorial.html?lang=zh>`_
+    以上为Windows下使用安卓模拟器测试用例的环境配置步骤，如果需要在Mac操作系统下配置请直接参考 `此处    <http://appium.io/tutorial.html?lang=zh>`_
 
 RIDE的安装
 ------------------------------------------------------------------------------------------------------------------------
