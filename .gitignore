@@ -7,6 +7,8 @@ MANIFEST
 *.pyc
 .DS_Store
 script/screenshot/*.png
+script/Function*/*.xml
+script/Function*/*.html
 screenshot/*.png
 robotframework_bjrobot.egg-info
 src/robotframework_bjrobot.egg-info

@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170131 22:55:10.672" generator="Robot 3.0.1 (Python 2.7.12 on win32)">
+<suite id="s1" name="Desktop Browser &amp; Mobile">
+<suite source="E:\AUTOMATION\script\Function1\desktop_browser.robot" id="s1-s1" name="Desktop Browser">
+<test id="s1-s1-t1" name="成功样例">
+<kw name="Open Browser" library="BJRobot">
+<doc>Open a browser and go to expected url address, set the browser and the proxy, as well as the alias,</doc>
+<arguments>
+<arg>http://www.baidu.com</arg>
+<arg>chrome</arg>
+<arg>aa</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:55:14.893" starttime="20170131 22:55:10.805"></status>
+</kw>
+<kw name="Maximize Browser Window" library="BJRobot">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170131 22:55:16.045" starttime="20170131 22:55:14.893"></status>
+</kw>
+<kw name="Title Should Contain" library="BJRobot">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>百度一下</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:55:16.051" starttime="20170131 22:55:16.045"></status>
+</kw>
+<kw name="Set Value By Id" library="BJRobot">
+<doc>set value on a certain element by id</doc>
+<arguments>
+<arg>kw</arg>
+<arg>test</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:55:16.193" starttime="20170131 22:55:16.051"></status>
+</kw>
+<kw name="Click Element By Id" library="BJRobot">
+<doc>Click the element by its element id</doc>
+<arguments>
+<arg>su</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:55:16.320" starttime="20170131 22:55:16.193"></status>
+</kw>
+<kw name="Open Browser" library="BJRobot">
+<doc>Open a browser and go to expected url address, set the browser and the proxy, as well as the alias,</doc>
+<arguments>
+<arg>http://www.bing.com</arg>
+<arg>ie</arg>
+<arg>bb</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:55:20.395" starttime="20170131 22:55:16.320"></status>
+</kw>
+<kw name="Title Should Contain" library="BJRobot">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>全球搜索</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:55:20.408" starttime="20170131 22:55:20.395"></status>
+</kw>
+<kw name="Maximize Browser Window" library="BJRobot">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170131 22:55:20.421" starttime="20170131 22:55:20.409"></status>
+</kw>
+<kw name="Switch Browser" library="BJRobot">
+<doc>Switches between active browsers using index or alias.</doc>
+<arguments>
+<arg>aa</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:55:20.422" starttime="20170131 22:55:20.421"></status>
+</kw>
+<kw name="Set Window Size" library="BJRobot">
+<doc>Sets the `width` and `height` of the current window to the specified values.</doc>
+<arguments>
+<arg>1024</arg>
+<arg>768</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:55:20.472" starttime="20170131 22:55:20.422"></status>
+</kw>
+<kw name="Find Element" library="BJRobot">
+<doc>Find single element from current page and return it back.</doc>
+<arguments>
+<arg>partial link=JavaScript</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:55:20.631" starttime="20170131 22:55:20.472"></status>
+</kw>
+<kw name="Close Browser" library="BJRobot">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170131 22:55:23.667" starttime="20170131 22:55:20.631"></status>
+</kw>
+<kw name="Switch Browser" library="BJRobot">
+<doc>Switches between active browsers using index or alias.</doc>
+<arguments>
+<arg>bb</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:55:23.667" starttime="20170131 22:55:23.667"></status>
+</kw>
+<kw name="Set Value By Id" library="BJRobot">
+<doc>set value on a certain element by id</doc>
+<arguments>
+<arg>sb_form_q</arg>
+<arg>msa cdc test</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:55:24.157" starttime="20170131 22:55:23.668"></status>
+</kw>
+<kw name="Click Element By Id" library="BJRobot">
+<doc>Click the element by its element id</doc>
+<arguments>
+<arg>sb_form_go</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:55:25.344" starttime="20170131 22:55:24.157"></status>
+</kw>
+<kw name="Find Element" library="BJRobot">
+<doc>Find single element from current page and return it back.</doc>
+<arguments>
+<arg>xpath=//li[@class='b_algo' and @data-bm='7']</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:55:25.504" starttime="20170131 22:55:25.344"></status>
+</kw>
+<kw name="Close Browser" library="BJRobot">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170131 22:55:28.634" starttime="20170131 22:55:25.504"></status>
+</kw>
+<kw type="teardown" name="Close All Browsers" library="BJRobot">
+<doc>Closes the all open browsers in current session.</doc>
+<status status="PASS" endtime="20170131 22:55:28.635" starttime="20170131 22:55:28.634"></status>
+</kw>
+<status status="PASS" endtime="20170131 22:55:28.635" critical="yes" starttime="20170131 22:55:10.804"></status>
+</test>
+<test id="s1-s1-t2" name="失败样例">
+<kw name="Open Browser" library="BJRobot">
+<doc>Open a browser and go to expected url address, set the browser and the proxy, as well as the alias,</doc>
+<arguments>
+<arg>http://www.baidu.com</arg>
+<arg>chrome</arg>
+<arg>alias=aa</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:55:32.666" starttime="20170131 22:55:28.637"></status>
+</kw>
+<kw name="Maximize Browser Window" library="BJRobot">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170131 22:55:33.827" starttime="20170131 22:55:32.666"></status>
+</kw>
+<kw name="Title Should Contain" library="BJRobot">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>百度一下</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:55:33.834" starttime="20170131 22:55:33.827"></status>
+</kw>
+<kw name="Set Value By Id" library="BJRobot">
+<doc>set value on a certain element by id</doc>
+<arguments>
+<arg>kw</arg>
+<arg>test</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:55:33.986" starttime="20170131 22:55:33.835"></status>
+</kw>
+<kw name="Click Element By Id" library="BJRobot">
+<doc>Click the element by its element id</doc>
+<arguments>
+<arg>su</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:55:34.117" starttime="20170131 22:55:33.986"></status>
+</kw>
+<kw name="Open Browser" library="BJRobot">
+<doc>Open a browser and go to expected url address, set the browser and the proxy, as well as the alias,</doc>
+<arguments>
+<arg>http://www.bing.com</arg>
+<arg>ie</arg>
+<arg>alias=bb</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:55:38.401" starttime="20170131 22:55:34.118"></status>
+</kw>
+<kw name="Maximize Browser Window" library="BJRobot">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170131 22:55:38.414" starttime="20170131 22:55:38.401"></status>
+</kw>
+<kw name="Title Should Contain" library="BJRobot">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>全球搜索</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:55:38.427" starttime="20170131 22:55:38.414"></status>
+</kw>
+<kw name="Switch Browser" library="BJRobot">
+<doc>Switches between active browsers using index or alias.</doc>
+<arguments>
+<arg>aa</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:55:38.427" starttime="20170131 22:55:38.427"></status>
+</kw>
+<kw name="Find Element" library="BJRobot">
+<doc>Find single element from current page and return it back.</doc>
+<arguments>
+<arg>partial link text=JavaScript</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:55:38.582" starttime="20170131 22:55:38.427"></status>
+</kw>
+<kw name="Switch Browser" library="BJRobot">
+<doc>Switches between active browsers using index or alias.</doc>
+<arguments>
+<arg>bb</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:55:38.583" starttime="20170131 22:55:38.583"></status>
+</kw>
+<kw name="Set Value By Id" library="BJRobot">
+<doc>set value on a certain element by id</doc>
+<arguments>
+<arg>sb_form_q</arg>
+<arg>msa cdc test</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:55:39.020" starttime="20170131 22:55:38.583"></status>
+</kw>
+<kw name="Click Element By Id" library="BJRobot">
+<doc>Click the element by its element id</doc>
+<arguments>
+<arg>sb_form_go</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:55:39.866" starttime="20170131 22:55:39.020"></status>
+</kw>
+<kw name="Find Element" library="BJRobot">
+<doc>Find single element from current page and return it back.</doc>
+<arguments>
+<arg>xpath=//li[@class='b_algo' and @data-bm='61']</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="BJRobot">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170131 22:56:11.197" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="file:///E:/AUTOMATION/screenshot/selenium-screenshot-1.png"&gt;&lt;img src="file:///E:/AUTOMATION/screenshot/selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170131 22:56:11.197" starttime="20170131 22:56:10.989"></status>
+</kw>
+<msg timestamp="20170131 22:56:11.198" level="FAIL">Could not find element ('xpath', u"//li[@class='b_algo' and @data-bm='61']") within 31121 millisecond.</msg>
+<status status="FAIL" endtime="20170131 22:56:11.198" starttime="20170131 22:55:39.866"></status>
+</kw>
+<kw type="teardown" name="Close All Browsers" library="BJRobot">
+<doc>Closes the all open browsers in current session.</doc>
+<status status="PASS" endtime="20170131 22:56:17.397" starttime="20170131 22:56:11.198"></status>
+</kw>
+<status status="FAIL" endtime="20170131 22:56:17.397" critical="yes" starttime="20170131 22:55:28.635">Could not find element ('xpath', u"//li[@class='b_algo' and @data-bm='61']") within 31121 millisecond.</status>
+</test>
+<test id="s1-s1-t3" name="用户自定义关键字测试样例">
+<kw name="打开百度搜索" library="百度搜索">
+<arguments>
+<arg>ie</arg>
+<arg>aa</arg>
+</arguments>
+<kw name="Open Browser" library="BJRobot">
+<doc>Open a browser and go to expected url address, set the browser and the proxy, as well as the alias,</doc>
+<arguments>
+<arg>http://www.baidu.com</arg>
+<arg>${browser}</arg>
+<arg>${alias}</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:56:21.580" starttime="20170131 22:56:17.399"></status>
+</kw>
+<status status="PASS" endtime="20170131 22:56:21.581" starttime="20170131 22:56:17.399"></status>
+</kw>
+<kw name="最大化浏览器" library="百度搜索">
+<kw name="Maximize Browser Window" library="BJRobot">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170131 22:56:21.593" starttime="20170131 22:56:21.581"></status>
+</kw>
+<status status="PASS" endtime="20170131 22:56:21.593" starttime="20170131 22:56:21.581"></status>
+</kw>
+<kw name="检查浏览器抬头" library="百度搜索">
+<arguments>
+<arg>百度一下</arg>
+</arguments>
+<kw name="Title Should Contain" library="BJRobot">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>${title}</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:56:21.606" starttime="20170131 22:56:21.594"></status>
+</kw>
+<status status="PASS" endtime="20170131 22:56:21.607" starttime="20170131 22:56:21.593"></status>
+</kw>
+<kw name="百度搜索" library="百度搜索">
+<arguments>
+<arg>test</arg>
+</arguments>
+<kw name="Set Value By Id" library="BJRobot">
+<doc>set value on a certain element by id</doc>
+<arguments>
+<arg>kw</arg>
+<arg>${value}</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:56:22.006" starttime="20170131 22:56:21.607"></status>
+</kw>
+<kw name="Click Element By Id" library="BJRobot">
+<doc>Click the element by its element id</doc>
+<arguments>
+<arg>su</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:56:25.160" starttime="20170131 22:56:22.007"></status>
+</kw>
+<status status="PASS" endtime="20170131 22:56:25.160" starttime="20170131 22:56:21.607"></status>
+</kw>
+<kw name="根据搜索链接验证搜索结果" library="百度搜索">
+<arguments>
+<arg>JavaScript</arg>
+</arguments>
+<kw name="Find Element" library="BJRobot">
+<doc>Find single element from current page and return it back.</doc>
+<arguments>
+<arg>partial link=${partiallinktext}</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:56:25.642" starttime="20170131 22:56:25.161"></status>
+</kw>
+<status status="PASS" endtime="20170131 22:56:25.642" starttime="20170131 22:56:25.160"></status>
+</kw>
+<kw name="设置浏览器大小" library="百度搜索">
+<arguments>
+<arg>1024</arg>
+<arg>768</arg>
+</arguments>
+<kw name="Set Window Size" library="BJRobot">
+<doc>Sets the `width` and `height` of the current window to the specified values.</doc>
+<arguments>
+<arg>${length}</arg>
+<arg>${width}</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:56:25.697" starttime="20170131 22:56:25.643"></status>
+</kw>
+<status status="PASS" endtime="20170131 22:56:25.697" starttime="20170131 22:56:25.643"></status>
+</kw>
+<kw name="打开必应搜索" library="必应搜索">
+<arguments>
+<arg>chrome</arg>
+<arg>bb</arg>
+</arguments>
+<kw name="Open Browser" library="BJRobot">
+<doc>Open a browser and go to expected url address, set the browser and the proxy, as well as the alias,</doc>
+<arguments>
+<arg>http://www.bing.com</arg>
+<arg>${browser}</arg>
+<arg>${alias}</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:56:29.745" starttime="20170131 22:56:25.698"></status>
+</kw>
+<status status="PASS" endtime="20170131 22:56:29.746" starttime="20170131 22:56:25.698"></status>
+</kw>
+<kw name="最大化浏览器" library="百度搜索">
+<kw name="Maximize Browser Window" library="BJRobot">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170131 22:56:30.902" starttime="20170131 22:56:29.746"></status>
+</kw>
+<status status="PASS" endtime="20170131 22:56:30.902" starttime="20170131 22:56:29.746"></status>
+</kw>
+<kw name="检查浏览器抬头" library="百度搜索">
+<arguments>
+<arg>全球搜索</arg>
+</arguments>
+<kw name="Title Should Contain" library="BJRobot">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>${title}</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:56:30.909" starttime="20170131 22:56:30.903"></status>
+</kw>
+<status status="PASS" endtime="20170131 22:56:30.909" starttime="20170131 22:56:30.903"></status>
+</kw>
+<kw name="切换浏览器" library="百度搜索">
+<arguments>
+<arg>aa</arg>
+</arguments>
+<kw name="Switch Browser" library="BJRobot">
+<doc>Switches between active browsers using index or alias.</doc>
+<arguments>
+<arg>${alias}</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:56:30.910" starttime="20170131 22:56:30.910"></status>
+</kw>
+<status status="PASS" endtime="20170131 22:56:30.911" starttime="20170131 22:56:30.909"></status>
+</kw>
+<kw name="设置浏览器大小" library="百度搜索">
+<arguments>
+<arg>1024</arg>
+<arg>768</arg>
+</arguments>
+<kw name="Set Window Size" library="BJRobot">
+<doc>Sets the `width` and `height` of the current window to the specified values.</doc>
+<arguments>
+<arg>${length}</arg>
+<arg>${width}</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:56:30.924" starttime="20170131 22:56:30.911"></status>
+</kw>
+<status status="PASS" endtime="20170131 22:56:30.924" starttime="20170131 22:56:30.911"></status>
+</kw>
+<kw name="最大化浏览器" library="百度搜索">
+<kw name="Maximize Browser Window" library="BJRobot">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170131 22:56:30.958" starttime="20170131 22:56:30.924"></status>
+</kw>
+<status status="PASS" endtime="20170131 22:56:30.958" starttime="20170131 22:56:30.924"></status>
+</kw>
+<kw name="根据搜索链接验证搜索结果" library="百度搜索">
+<arguments>
+<arg>JavaScript</arg>
+</arguments>
+<kw name="Find Element" library="BJRobot">
+<doc>Find single element from current page and return it back.</doc>
+<arguments>
+<arg>partial link=${partiallinktext}</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:56:31.459" starttime="20170131 22:56:30.959"></status>
+</kw>
+<status status="PASS" endtime="20170131 22:56:31.460" starttime="20170131 22:56:30.958"></status>
+</kw>
+<kw name="切换浏览器" library="百度搜索">
+<arguments>
+<arg>bb</arg>
+</arguments>
+<kw name="Switch Browser" library="BJRobot">
+<doc>Switches between active browsers using index or alias.</doc>
+<arguments>
+<arg>${alias}</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:56:31.460" starttime="20170131 22:56:31.460"></status>
+</kw>
+<status status="PASS" endtime="20170131 22:56:31.460" starttime="20170131 22:56:31.460"></status>
+</kw>
+<kw name="必应搜索" library="必应搜索">
+<arguments>
+<arg>msa cdc test</arg>
+</arguments>
+<kw name="Set Value By Id" library="BJRobot">
+<doc>set value on a certain element by id</doc>
+<arguments>
+<arg>sb_form_q</arg>
+<arg>${value}</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:56:33.895" starttime="20170131 22:56:31.461"></status>
+</kw>
+<kw name="Click Element By Id" library="BJRobot">
+<doc>Click the element by its element id</doc>
+<arguments>
+<arg>sb_form_go</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:56:34.450" starttime="20170131 22:56:33.895"></status>
+</kw>
+<status status="PASS" endtime="20170131 22:56:34.450" starttime="20170131 22:56:31.461"></status>
+</kw>
+<kw name="根据XPATH判断搜索结果" library="必应搜索">
+<arguments>
+<arg>//li[@class='b_algo' and @data-bm='7']</arg>
+</arguments>
+<kw name="Find Element" library="BJRobot">
+<doc>Find single element from current page and return it back.</doc>
+<arguments>
+<arg>xpath=${xpath}</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:56:34.565" starttime="20170131 22:56:34.451"></status>
+</kw>
+<status status="PASS" endtime="20170131 22:56:34.565" starttime="20170131 22:56:34.450"></status>
+</kw>
+<kw type="teardown" name="Close All Browsers" library="BJRobot">
+<doc>Closes the all open browsers in current session.</doc>
+<status status="PASS" endtime="20170131 22:56:40.651" starttime="20170131 22:56:34.565"></status>
+</kw>
+<status status="PASS" endtime="20170131 22:56:40.651" critical="yes" starttime="20170131 22:56:17.397"></status>
+</test>
+<status status="FAIL" endtime="20170131 22:56:40.652" starttime="20170131 22:55:10.695"></status>
+</suite>
+<suite source="E:\AUTOMATION\script\Function2\mobile.robot" id="s1-s2" name="Mobile">
+<test id="s1-s2-t1" name="Android_Native_Demo">
+<kw name="Open Application" library="BJRobot">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>http://127.0.0.1:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=4.2.2</arg>
+<arg>deviceName=tesddt</arg>
+<arg>app=E:\\AUTOMATION\\script\\Function2/../../demoapp/ContactManager.apk</arg>
+<arg>automationName=appium</arg>
+<arg>appPackage=com.example.android.contactmanager</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:56:47.168" starttime="20170131 22:56:40.667"></status>
+</kw>
+<kw name="Click Element" library="BJRobot">
+<doc>Click the element by its element locator</doc>
+<arguments>
+<arg>id=com.example.android.contactmanager:id/addContactButton</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:56:48.931" starttime="20170131 22:56:47.168"></status>
+</kw>
+<kw name="Set Value" library="BJRobot">
+<doc>set value on a certain element by its locator</doc>
+<arguments>
+<arg>id=com.example.android.contactmanager:id/contactNameEditText</arg>
+<arg>appium user</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:56:59.892" starttime="20170131 22:56:48.932"></status>
+</kw>
+<kw name="Set Value" library="BJRobot">
+<doc>set value on a certain element by its locator</doc>
+<arguments>
+<arg>id=com.example.android.contactmanager:id/contactPhoneEditText</arg>
+<arg>55555555555555</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:57:08.429" starttime="20170131 22:56:59.892"></status>
+</kw>
+<kw name="Set Value" library="BJRobot">
+<doc>set value on a certain element by its locator</doc>
+<arguments>
+<arg>id=com.example.android.contactmanager:id/contactEmailEditText</arg>
+<arg>demo@io.com</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:57:16.267" starttime="20170131 22:57:08.429"></status>
+</kw>
+<kw name="Click Element" library="BJRobot">
+<doc>Click the element by its element locator</doc>
+<arguments>
+<arg>accessibility_id=Save</arg>
+</arguments>
+<status status="PASS" endtime="20170131 22:57:17.481" starttime="20170131 22:57:16.267"></status>
+</kw>
+<kw name="Close Application" library="BJRobot">
+<doc>Closes the current application.</doc>
+<status status="PASS" endtime="20170131 22:57:18.508" starttime="20170131 22:57:17.481"></status>
+</kw>
+<kw type="teardown" name="Close All Applications" library="BJRobot">
+<doc>Closes all open applications.</doc>
+<status status="PASS" endtime="20170131 22:57:18.509" starttime="20170131 22:57:18.509"></status>
+</kw>
+<tags>
+<tag>regression</tag>
+</tags>
+<status status="PASS" endtime="20170131 22:57:18.509" critical="yes" starttime="20170131 22:56:40.666"></status>
+</test>
+<status status="PASS" endtime="20170131 22:57:18.510" starttime="20170131 22:56:40.653"></status>
+</suite>
+<status status="FAIL" endtime="20170131 22:57:18.512" starttime="20170131 22:55:10.674"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="3">Critical Tests</stat>
+<stat fail="1" pass="3">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">regression</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Desktop Browser &amp; Mobile" pass="3">Desktop Browser &amp; Mobile</stat>
+<stat fail="1" id="s1-s1" name="Desktop Browser" pass="2">Desktop Browser &amp; Mobile.Desktop Browser</stat>
+<stat fail="0" id="s1-s2" name="Mobile" pass="1">Desktop Browser &amp; Mobile.Mobile</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
