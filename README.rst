@@ -105,6 +105,7 @@ RIDE的安装
 Windows下
 
 pybot.bat --outputdir e:/AUTOMATION/output script/Function1/desktop_browser.robot script/Function2/mobile.robot
+
 Linux下
 
 robot --outputdir e:/AUTOMATION/output script/Function1/desktop_browser.robot script/Function2/mobile.robot
